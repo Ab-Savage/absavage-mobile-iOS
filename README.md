@@ -1,2 +1,2 @@
 # absavage-mobile-iOS
-absavage mobile apps for iOS
+absavage mobile app for iOS
