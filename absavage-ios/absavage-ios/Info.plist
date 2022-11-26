@@ -2,6 +2,16 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Graphik-Regular-Trial.otf</string>
+		<string>Graphik-Semibold-Trial.otf</string>
+		<string>MonumentExtended-Regular.otf</string>
+		<string>TuskerGrotesk-3600Semibold.ttf</string>
+		<string>MonumentExtended-Ultrabold.otf</string>
+		<string>GraphikRegular.otf</string>
+		<string>GraphikMedium.otf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+        <array key="TuskerGrotesk-3600Semibold.ttf">
+            <string>TuskerGrotesk-3600Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscribedViewController" customModule="absavage_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="gradientBg" destination="lXe-SD-wNn" id="wP4-mC-FYa"/>
+                <outlet property="imageView" destination="dLh-8n-QGT" id="yeA-O0-qz1"/>
+                <outlet property="quickIntroButton" destination="T0Q-QY-pDc" id="Hbi-Dx-ks4"/>
+                <outlet property="skipButton" destination="cSz-mC-jbV" id="RTi-GM-NsL"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lXe-SD-wNn" userLabel="gradientBg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-2" translatesAutoresizingMaskIntoConstraints="NO" id="a64-10-kbg">
+                    <rect key="frame" x="158.5" y="104" width="97" height="28"/>
+                </imageView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-3" translatesAutoresizingMaskIntoConstraints="NO" id="cSB-Hb-fpj">
+                    <rect key="frame" x="138" y="148" width="138" height="14.5"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="KRJ-Dh-8W1">
+                    <rect key="frame" x="16" y="212.5" width="382" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME TO ABSAVAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ezG-h7-hus">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="12"/>
+                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YOU'RE A SAVAGE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fy5-fh-OsB">
+                            <rect key="frame" x="0.0" y="22" width="382" height="50.5"/>
+                            <fontDescription key="fontDescription" name="TuskerGrotesk-3600Semibold" family="Tusker Grotesk" pointSize="48"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="249" verticalHuggingPriority="249" image="register-bg-2" translatesAutoresizingMaskIntoConstraints="NO" id="dLh-8n-QGT" userLabel="imageView">
+                    <rect key="frame" x="32" y="313" width="350" height="445"/>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T0Q-QY-pDc" userLabel="quickIntroButton">
+                    <rect key="frame" x="56" y="681" width="302" height="55"/>
+                    <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="55" id="OLZ-p0-Uv5"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="12"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="WATCH QUICK INTRO"/>
+                    <connections>
+                        <action selector="handleQuickIntroTapped:" destination="-1" eventType="touchUpInside" id="9XJ-t5-bcD"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cSz-mC-jbV" userLabel="skipButton">
+                    <rect key="frame" x="16" y="798" width="382" height="28"/>
+                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Skip and Continue">
+                        <fontDescription key="titleFontDescription" name="Graphik-Regular" family="Graphik" pointSize="14"/>
+                    </buttonConfiguration>
+                    <connections>
+                        <action selector="handleSkipTapped:" destination="-1" eventType="touchUpInside" id="OeP-4x-MgX"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="a64-10-kbg" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="60" id="81e-g2-pOf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cSz-mC-jbV" secondAttribute="trailing" constant="16" id="9Vf-6A-buj"/>
+                <constraint firstItem="cSB-Hb-fpj" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="9Vu-pz-ez9"/>
+                <constraint firstItem="KRJ-Dh-8W1" firstAttribute="top" secondItem="cSB-Hb-fpj" secondAttribute="bottom" constant="50" id="LGr-5F-ODh"/>
+                <constraint firstItem="lXe-SD-wNn" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Suz-TF-HS8"/>
+                <constraint firstItem="T0Q-QY-pDc" firstAttribute="trailing" secondItem="dLh-8n-QGT" secondAttribute="trailing" constant="-24" id="b1F-lG-CQ8"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cSz-mC-jbV" secondAttribute="bottom" constant="36" id="cgJ-mg-1Ll"/>
+                <constraint firstItem="dLh-8n-QGT" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="dPJ-gi-gvW"/>
+                <constraint firstItem="KRJ-Dh-8W1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="eXB-ax-mpd"/>
+                <constraint firstItem="dLh-8n-QGT" firstAttribute="top" secondItem="KRJ-Dh-8W1" secondAttribute="bottom" constant="28" id="fJJ-cr-klB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="KRJ-Dh-8W1" secondAttribute="trailing" constant="16" id="frg-2F-EfT"/>
+                <constraint firstItem="cSz-mC-jbV" firstAttribute="top" secondItem="dLh-8n-QGT" secondAttribute="bottom" constant="40" id="gWN-lk-EWa"/>
+                <constraint firstItem="T0Q-QY-pDc" firstAttribute="leading" secondItem="dLh-8n-QGT" secondAttribute="leading" constant="24" id="kxk-Wx-U8L"/>
+                <constraint firstItem="lXe-SD-wNn" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="mBl-2B-oIb"/>
+                <constraint firstItem="T0Q-QY-pDc" firstAttribute="bottom" secondItem="dLh-8n-QGT" secondAttribute="bottom" constant="-22" id="mRd-w7-MV7"/>
+                <constraint firstAttribute="trailing" secondItem="lXe-SD-wNn" secondAttribute="trailing" id="mbA-oK-k7b"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="dLh-8n-QGT" secondAttribute="trailing" constant="32" id="ozG-uU-FlW"/>
+                <constraint firstItem="cSB-Hb-fpj" firstAttribute="top" secondItem="a64-10-kbg" secondAttribute="bottom" constant="16" id="uhc-cA-KUw"/>
+                <constraint firstItem="a64-10-kbg" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="vSv-6j-M2i"/>
+                <constraint firstItem="cSz-mC-jbV" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="vX4-5l-aTe"/>
+                <constraint firstAttribute="bottom" secondItem="lXe-SD-wNn" secondAttribute="bottom" id="zWs-Cx-ecH"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="logo-2" width="97" height="28"/>
+        <image name="logo-3" width="138" height="14.5"/>
+        <image name="register-bg-2" width="285" height="352"/>
+    </resources>
+</document>

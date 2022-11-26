@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+        <array key="MonumentExtended-Ultrabold.otf">
+            <string>MonumentExtended-Ultrabold</string>
+        </array>
+        <array key="TuskerGrotesk-3600Semibold.ttf">
+            <string>TuskerGrotesk-3600Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginViewController" customModule="absavage_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="appleLoginButton" destination="A8u-d0-3hk" id="Of3-K6-361"/>
+                <outlet property="emailImageView" destination="Q00-fQ-r4G" id="SOz-YO-nHw"/>
+                <outlet property="emailTextField" destination="CNY-Jn-UuQ" id="2KO-1h-Osn"/>
+                <outlet property="eyePasswordImageView" destination="ZKG-rV-Xfr" id="f5z-2z-uww"/>
+                <outlet property="forgotPasswordLabel" destination="i2o-uD-udz" id="dZZ-oR-jF6"/>
+                <outlet property="googleLoginButton" destination="NiB-sR-2nq" id="Wh2-ds-PBj"/>
+                <outlet property="gradientBg" destination="emV-Mi-4Va" id="ZFx-KY-2TF"/>
+                <outlet property="loginButton" destination="LeL-9H-Uqs" id="xh1-Dc-z7R"/>
+                <outlet property="passwordTextField" destination="EP4-lB-lxc" id="kLU-9T-sQg"/>
+                <outlet property="signInTitleLabel" destination="6Ib-jM-RaL" id="XBA-XC-IuQ"/>
+                <outlet property="signUpButton" destination="UEZ-uM-yyo" id="Ccd-lg-eZd"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="welcomeTitleLabel" destination="E5x-bY-jXU" id="Or2-qt-0kx"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="emV-Mi-4Va" userLabel="gradientBg">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-1" translatesAutoresizingMaskIntoConstraints="NO" id="UAz-h2-WLT">
+                    <rect key="frame" x="138.5" y="68" width="137" height="14"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="MTX-ge-E60" userLabel="topStackView">
+                    <rect key="frame" x="109.5" y="144" width="195" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGN IN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ib-jM-RaL" userLabel="signInTitleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="195" height="12"/>
+                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WELCOME BACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5x-bY-jXU" userLabel="welcomeTitleLabel">
+                            <rect key="frame" x="0.0" y="22" width="195" height="50.5"/>
+                            <fontDescription key="fontDescription" name="TuskerGrotesk-3600Semibold" family="Tusker Grotesk" pointSize="48"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="Rm9-cY-a8X" userLabel="mainStackView">
+                    <rect key="frame" x="32" y="367" width="350" height="312"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="5UU-Nt-WLN" userLabel="inputStackView">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="154"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="fer-ch-Uty" userLabel="emailContainer">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="41"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="37W-jI-cFX">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="24"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="CNY-Jn-UuQ" userLabel="emailTextField">
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="24"/>
+                                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checklist-1" translatesAutoresizingMaskIntoConstraints="NO" id="Q00-fQ-r4G" userLabel="emailImageView">
+                                                    <rect key="frame" x="326" y="0.0" width="24" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPW-ft-xUR">
+                                            <rect key="frame" x="0.0" y="40" width="350" height="1"/>
+                                            <color key="backgroundColor" red="0.28235294117647058" green="0.28235294117647058" blue="0.28235294117647058" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="kXK-cM-A1j"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="USu-Tq-b5R" userLabel="passwordContainer">
+                                    <rect key="frame" x="0.0" y="81" width="350" height="73"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hVC-Cy-OFM">
+                                            <rect key="frame" x="0.0" y="0.0" width="350" height="24"/>
+                                            <subviews>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EP4-lB-lxc" userLabel="passwordTextField">
+                                                    <rect key="frame" x="0.0" y="0.0" width="326" height="24"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eye-password" translatesAutoresizingMaskIntoConstraints="NO" id="ZKG-rV-Xfr" userLabel="eyePasswordImageView">
+                                                    <rect key="frame" x="326" y="0.0" width="24" height="24"/>
+                                                </imageView>
+                                            </subviews>
+                                        </stackView>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="I7i-fW-FHs">
+                                            <rect key="frame" x="0.0" y="40" width="350" height="1"/>
+                                            <color key="backgroundColor" red="0.28235294119999998" green="0.28235294119999998" blue="0.28235294119999998" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="1" id="oCh-P3-naO"/>
+                                            </constraints>
+                                        </view>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6EI-XE-lEn">
+                                            <rect key="frame" x="0.0" y="57" width="350" height="16"/>
+                                            <subviews>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i2o-uD-udz" userLabel="forgotPasswordLabel">
+                                                    <rect key="frame" x="0.0" y="0.0" width="131.5" height="16"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="16" id="0nL-8a-ygG"/>
+                                                    </constraints>
+                                                    <color key="tintColor" red="0.96078431372549022" green="0.1764705882352941" blue="0.33725490196078434" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="plain" title="Forgot Password?">
+                                                        <fontDescription key="titleFontDescription" name="Graphik-Regular" family="Graphik" pointSize="13"/>
+                                                        <color key="baseForegroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="i2o-uD-udz" secondAttribute="bottom" id="8Z0-gy-c7H"/>
+                                                <constraint firstItem="i2o-uD-udz" firstAttribute="leading" secondItem="6EI-XE-lEn" secondAttribute="leading" id="ILr-FG-l4A"/>
+                                                <constraint firstItem="i2o-uD-udz" firstAttribute="top" secondItem="6EI-XE-lEn" secondAttribute="top" id="aNS-Nm-JfH"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bKa-N9-e8H" userLabel="buttonsStackView">
+                            <rect key="frame" x="0.0" y="202" width="350" height="110"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LeL-9H-Uqs" userLabel="loginButton">
+                                    <rect key="frame" x="0.0" y="0.0" width="350" height="55"/>
+                                    <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="fGi-fz-93r"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="LOGIN"/>
+                                    <connections>
+                                        <action selector="handleLoginTapped:" destination="-1" eventType="touchUpInside" id="6zO-Uy-iu8"/>
+                                    </connections>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UEZ-uM-yyo" userLabel="signUpButton">
+                                    <rect key="frame" x="0.0" y="55" width="350" height="55"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="55" id="UjC-LY-x1q"/>
+                                    </constraints>
+                                    <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                                    <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                    <state key="normal" title="SIGN UP"/>
+                                    <connections>
+                                        <action selector="handleSignUpTapped:" destination="-1" eventType="touchUpInside" id="Tdw-Uf-1ZC"/>
+                                    </connections>
+                                </button>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="cfP-iw-aDF" userLabel="alternateLoginStackView">
+                    <rect key="frame" x="16" y="792" width="382" height="54"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="right" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A8u-d0-3hk" userLabel="appleLoginButton">
+                            <rect key="frame" x="0.0" y="0.0" width="191" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Button" image="apple-logo-1"/>
+                            <buttonConfiguration key="configuration" style="plain" image="apple-logo-1"/>
+                            <connections>
+                                <action selector="handleAppleTapped:" destination="-1" eventType="touchUpInside" id="h3O-CN-ffM"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NiB-sR-2nq" userLabel="googleLoginButton">
+                            <rect key="frame" x="191" y="0.0" width="191" height="54"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="google-logo-1"/>
+                            <buttonConfiguration key="configuration" style="plain" image="google-logo-1"/>
+                            <connections>
+                                <action selector="handleGoogleTapped:" destination="-1" eventType="touchUpInside" id="BQz-EZ-a5M"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="54" id="Q2D-Sg-K9D"/>
+                    </constraints>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="emV-Mi-4Va" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="5y7-6k-Z5J"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Rm9-cY-a8X" secondAttribute="trailing" constant="32" id="CfP-91-J9K"/>
+                <constraint firstItem="Rm9-cY-a8X" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="Hva-Fh-jpE"/>
+                <constraint firstItem="cfP-iw-aDF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="IfG-GG-GOE"/>
+                <constraint firstItem="Rm9-cY-a8X" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" constant="75" id="SWR-7G-8UR"/>
+                <constraint firstItem="Rm9-cY-a8X" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UMD-SC-dtT"/>
+                <constraint firstItem="UAz-h2-WLT" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="UdD-6Q-XNP"/>
+                <constraint firstItem="UAz-h2-WLT" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="24" id="bAd-mz-nRw"/>
+                <constraint firstItem="emV-Mi-4Va" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="dhe-EL-g2r"/>
+                <constraint firstItem="MTX-ge-E60" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="e4v-pu-3D0"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="cfP-iw-aDF" secondAttribute="trailing" constant="16" id="g7b-Js-Fmi"/>
+                <constraint firstAttribute="trailing" secondItem="emV-Mi-4Va" secondAttribute="trailing" id="gb1-S9-qmg"/>
+                <constraint firstAttribute="bottom" secondItem="emV-Mi-4Va" secondAttribute="bottom" id="kyd-9N-2UJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="cfP-iw-aDF" secondAttribute="bottom" constant="16" id="o8M-y9-TKa"/>
+                <constraint firstItem="MTX-ge-E60" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="zD9-ze-puV"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="apple-logo-1" width="54" height="54"/>
+        <image name="checklist-1" width="24" height="24"/>
+        <image name="eye-password" width="24" height="24"/>
+        <image name="google-logo-1" width="54" height="54"/>
+        <image name="logo-1" width="137" height="14"/>
+    </resources>
+</document>

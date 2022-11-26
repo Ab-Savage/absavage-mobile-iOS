@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GraphikRegular.otf">
+            <string>Graphik-Regular</string>
+        </array>
+        <array key="MonumentExtended-Regular.otf">
+            <string>MonumentExtended-Regular</string>
+        </array>
+        <array key="MonumentExtended-Ultrabold.otf">
+            <string>MonumentExtended-Ultrabold</string>
+        </array>
+        <array key="TuskerGrotesk-3600Semibold.ttf">
+            <string>TuskerGrotesk-3600Semibold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SubscriptionViewController" customModule="absavage_ios" customModuleProvider="target">
+            <connections>
+                <outlet property="freeTrialButton" destination="TKO-pR-SWJ" id="HMS-Tn-Dee"/>
+                <outlet property="subscriptionTableView" destination="a7c-4F-5g1" id="PIr-Vr-01w"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="register-bg-1" translatesAutoresizingMaskIntoConstraints="NO" id="QjS-So-NYt">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="448"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="lYM-Xi-0sF" userLabel="titleContainer">
+                    <rect key="frame" x="32" y="144" width="350" height="72.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FREE SUBSCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0JR-hq-Q5C" userLabel="titleLabel">
+                            <rect key="frame" x="0.0" y="0.0" width="350" height="12"/>
+                            <fontDescription key="fontDescription" name="MonumentExtended-Regular" family="Monument Extended" pointSize="10"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CHOOSE YOUR PLAN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i3Y-3C-E0x" userLabel="subtitleLabel">
+                            <rect key="frame" x="0.0" y="22" width="350" height="50.5"/>
+                            <fontDescription key="fontDescription" name="TuskerGrotesk-3600Semibold" family="Tusker Grotesk" pointSize="48"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="When you subscribe, you'll get instant unlimited access" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chg-II-u7t" userLabel="tertiaryLabel">
+                    <rect key="frame" x="72.5" y="231.5" width="269" height="26"/>
+                    <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qYd-KT-U6K">
+                    <rect key="frame" x="16" y="768" width="382" height="78"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TKO-pR-SWJ" userLabel="freeTrialButton">
+                            <rect key="frame" x="0.0" y="0.0" width="382" height="55"/>
+                            <color key="backgroundColor" red="0.96078431369999995" green="0.1764705882" blue="0.33725490200000002" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="55" id="MeY-A9-DBB"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="MonumentExtended-Ultrabold" family="Monument Extended" pointSize="14"/>
+                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="TRY 14 DAYS FREE TRIAL"/>
+                            <connections>
+                                <action selector="handleFreeTrialTapped:" destination="-1" eventType="touchUpInside" id="jTH-rw-tjc"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="And then $19.99 per month" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPS-Vh-HhY" userLabel="infoLabel">
+                            <rect key="frame" x="0.0" y="65" width="382" height="13"/>
+                            <fontDescription key="fontDescription" name="Graphik-Regular" family="Graphik" pointSize="13"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" estimatedSectionHeaderHeight="-1" sectionFooterHeight="18" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="a7c-4F-5g1" userLabel="subscriptionTableView">
+                    <rect key="frame" x="16" y="348" width="382" height="200"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="Tfh-Qj-Rij"/>
+                    </constraints>
+                    <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.10980392156862745" green="0.10980392156862745" blue="0.11764705882352941" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="qYd-KT-U6K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="2Fs-Ap-fDW"/>
+                <constraint firstItem="lYM-Xi-0sF" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="32" id="7Ml-1I-0fe"/>
+                <constraint firstItem="QjS-So-NYt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Dyt-La-Xrt"/>
+                <constraint firstItem="a7c-4F-5g1" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="J7N-sn-IkF"/>
+                <constraint firstItem="QjS-So-NYt" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.5" id="LsT-eX-ScG"/>
+                <constraint firstAttribute="trailing" secondItem="qYd-KT-U6K" secondAttribute="trailing" constant="16" id="Rx6-vy-h9i"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="lYM-Xi-0sF" secondAttribute="trailing" constant="32" id="TMa-gM-gdX"/>
+                <constraint firstItem="chg-II-u7t" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" multiplier="0.65" id="Usa-Hz-tkT"/>
+                <constraint firstItem="a7c-4F-5g1" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="XxY-mI-Y7X"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="qYd-KT-U6K" secondAttribute="bottom" constant="16" id="YfP-0i-Kdr"/>
+                <constraint firstItem="chg-II-u7t" firstAttribute="top" secondItem="lYM-Xi-0sF" secondAttribute="bottom" constant="15" id="hLe-eu-XjJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="a7c-4F-5g1" secondAttribute="trailing" constant="16" id="kwb-mw-OL9"/>
+                <constraint firstItem="a7c-4F-5g1" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="kyW-zN-raq"/>
+                <constraint firstItem="QjS-So-NYt" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="l8F-IN-uJ3"/>
+                <constraint firstItem="lYM-Xi-0sF" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="100" id="mgj-Nx-sgb"/>
+                <constraint firstAttribute="trailing" secondItem="QjS-So-NYt" secondAttribute="trailing" id="tkB-Zp-vcc"/>
+                <constraint firstItem="chg-II-u7t" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="zw9-V2-I4j"/>
+            </constraints>
+            <point key="canvasLocation" x="139" y="144"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="register-bg-1" width="375" height="459"/>
+    </resources>
+</document>

@@ -12,6 +12,25 @@
 		A5CF0BCE29312F8D005F5B62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BCD29312F8D005F5B62 /* ViewController.swift */; };
 		A5CF0BD329312F8E005F5B62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BD229312F8E005F5B62 /* Assets.xcassets */; };
 		A5CF0BD629312F8E005F5B62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BD429312F8E005F5B62 /* LaunchScreen.storyboard */; };
+		A5CF0BE129313519005F5B62 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BDF29313519005F5B62 /* LoginViewController.swift */; };
+		A5CF0BE229313519005F5B62 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BE029313519005F5B62 /* LoginViewController.xib */; };
+		A5CF0BE5293142C6005F5B62 /* Extension+UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BE4293142C6005F5B62 /* Extension+UIFont.swift */; };
+		A5CF0BF02931D1F2005F5B62 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BEE2931D1F2005F5B62 /* RegisterViewController.swift */; };
+		A5CF0BF12931D1F2005F5B62 /* RegisterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BEF2931D1F2005F5B62 /* RegisterViewController.xib */; };
+		A5CF0BF22931DEFC005F5B62 /* GraphikRegular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BEA2931431B005F5B62 /* GraphikRegular.otf */; };
+		A5CF0BF32931DEFC005F5B62 /* MonumentExtended-Ultrabold.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BE82931431B005F5B62 /* MonumentExtended-Ultrabold.otf */; };
+		A5CF0BF42931DEFC005F5B62 /* MonumentExtended-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BEB2931431B005F5B62 /* MonumentExtended-Regular.otf */; };
+		A5CF0BF52931DEFC005F5B62 /* TuskerGrotesk-3600Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BEC2931431B005F5B62 /* TuskerGrotesk-3600Semibold.ttf */; };
+		A5CF0BF62931DEFC005F5B62 /* GraphikMedium.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BE92931431B005F5B62 /* GraphikMedium.otf */; };
+		A5CF0BFA2931DFF1005F5B62 /* SubscriptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BF82931DFF1005F5B62 /* SubscriptionViewController.swift */; };
+		A5CF0BFB2931DFF1005F5B62 /* SubscriptionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0BF92931DFF1005F5B62 /* SubscriptionViewController.xib */; };
+		A5CF0BFF293215F2005F5B62 /* Subscription.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0BFE293215F2005F5B62 /* Subscription.swift */; };
+		A5CF0C0329321888005F5B62 /* subscriptionTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CF0C0129321888005F5B62 /* subscriptionTableViewCell.swift */; };
+		A5CF0C0429321888005F5B62 /* subscriptionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0C0229321888005F5B62 /* subscriptionTableViewCell.xib */; };
+		A5CF0C0629322088005F5B62 /* Graphik-Semibold-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0C0529322088005F5B62 /* Graphik-Semibold-Trial.otf */; };
+		A5CF0C0829322099005F5B62 /* Graphik-Regular-Trial.otf in Resources */ = {isa = PBXBuildFile; fileRef = A5CF0C0729322099005F5B62 /* Graphik-Regular-Trial.otf */; };
+		A5D8690429322F2B00D52578 /* SubscribedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5D8690229322F2B00D52578 /* SubscribedViewController.swift */; };
+		A5D8690529322F2B00D52578 /* SubscribedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A5D8690329322F2B00D52578 /* SubscribedViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +41,25 @@
 		A5CF0BD229312F8E005F5B62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A5CF0BD529312F8E005F5B62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A5CF0BD729312F8E005F5B62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A5CF0BDF29313519005F5B62 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		A5CF0BE029313519005F5B62 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		A5CF0BE4293142C6005F5B62 /* Extension+UIFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIFont.swift"; sourceTree = "<group>"; };
+		A5CF0BE82931431B005F5B62 /* MonumentExtended-Ultrabold.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Ultrabold.otf"; sourceTree = "<group>"; };
+		A5CF0BE92931431B005F5B62 /* GraphikMedium.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GraphikMedium.otf; sourceTree = "<group>"; };
+		A5CF0BEA2931431B005F5B62 /* GraphikRegular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = GraphikRegular.otf; sourceTree = "<group>"; };
+		A5CF0BEB2931431B005F5B62 /* MonumentExtended-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "MonumentExtended-Regular.otf"; sourceTree = "<group>"; };
+		A5CF0BEC2931431B005F5B62 /* TuskerGrotesk-3600Semibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "TuskerGrotesk-3600Semibold.ttf"; sourceTree = "<group>"; };
+		A5CF0BEE2931D1F2005F5B62 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		A5CF0BEF2931D1F2005F5B62 /* RegisterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RegisterViewController.xib; sourceTree = "<group>"; };
+		A5CF0BF82931DFF1005F5B62 /* SubscriptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscriptionViewController.swift; sourceTree = "<group>"; };
+		A5CF0BF92931DFF1005F5B62 /* SubscriptionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscriptionViewController.xib; sourceTree = "<group>"; };
+		A5CF0BFE293215F2005F5B62 /* Subscription.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subscription.swift; sourceTree = "<group>"; };
+		A5CF0C0129321888005F5B62 /* subscriptionTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = subscriptionTableViewCell.swift; sourceTree = "<group>"; };
+		A5CF0C0229321888005F5B62 /* subscriptionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = subscriptionTableViewCell.xib; sourceTree = "<group>"; };
+		A5CF0C0529322088005F5B62 /* Graphik-Semibold-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Semibold-Trial.otf"; sourceTree = "<group>"; };
+		A5CF0C0729322099005F5B62 /* Graphik-Regular-Trial.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Graphik-Regular-Trial.otf"; sourceTree = "<group>"; };
+		A5D8690229322F2B00D52578 /* SubscribedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubscribedViewController.swift; sourceTree = "<group>"; };
+		A5D8690329322F2B00D52578 /* SubscribedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubscribedViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +92,10 @@
 		A5CF0BC829312F8D005F5B62 /* absavage-ios */ = {
 			isa = PBXGroup;
 			children = (
+				A5CF0BFC293215D8005F5B62 /* Models */,
+				A5CF0BE629314305005F5B62 /* Resources */,
+				A5CF0BE3293142B3005F5B62 /* Extensions */,
+				A5CF0BDD2931348D005F5B62 /* Screens */,
 				A5CF0BC929312F8D005F5B62 /* AppDelegate.swift */,
 				A5CF0BCB29312F8D005F5B62 /* SceneDelegate.swift */,
 				A5CF0BCD29312F8D005F5B62 /* ViewController.swift */,
@@ -62,6 +104,109 @@
 				A5CF0BD729312F8E005F5B62 /* Info.plist */,
 			);
 			path = "absavage-ios";
+			sourceTree = "<group>";
+		};
+		A5CF0BDD2931348D005F5B62 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				A5D8690129322F1500D52578 /* Subscribed */,
+				A5CF0BF72931DFDA005F5B62 /* Subscription */,
+				A5CF0BED2931D1DF005F5B62 /* Register */,
+				A5CF0BDE2931349B005F5B62 /* Login */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		A5CF0BDE2931349B005F5B62 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BDF29313519005F5B62 /* LoginViewController.swift */,
+				A5CF0BE029313519005F5B62 /* LoginViewController.xib */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A5CF0BE3293142B3005F5B62 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BE4293142C6005F5B62 /* Extension+UIFont.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A5CF0BE629314305005F5B62 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BE72931430C005F5B62 /* CustomFonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A5CF0BE72931430C005F5B62 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BE92931431B005F5B62 /* GraphikMedium.otf */,
+				A5CF0C0729322099005F5B62 /* Graphik-Regular-Trial.otf */,
+				A5CF0BEA2931431B005F5B62 /* GraphikRegular.otf */,
+				A5CF0C0529322088005F5B62 /* Graphik-Semibold-Trial.otf */,
+				A5CF0BEB2931431B005F5B62 /* MonumentExtended-Regular.otf */,
+				A5CF0BE82931431B005F5B62 /* MonumentExtended-Ultrabold.otf */,
+				A5CF0BEC2931431B005F5B62 /* TuskerGrotesk-3600Semibold.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		A5CF0BED2931D1DF005F5B62 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BEE2931D1F2005F5B62 /* RegisterViewController.swift */,
+				A5CF0BEF2931D1F2005F5B62 /* RegisterViewController.xib */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		A5CF0BF72931DFDA005F5B62 /* Subscription */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0C0029321866005F5B62 /* TableViewCells */,
+				A5CF0BF82931DFF1005F5B62 /* SubscriptionViewController.swift */,
+				A5CF0BF92931DFF1005F5B62 /* SubscriptionViewController.xib */,
+			);
+			path = Subscription;
+			sourceTree = "<group>";
+		};
+		A5CF0BFC293215D8005F5B62 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BFD293215DF005F5B62 /* Enums */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A5CF0BFD293215DF005F5B62 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0BFE293215F2005F5B62 /* Subscription.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		A5CF0C0029321866005F5B62 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				A5CF0C0129321888005F5B62 /* subscriptionTableViewCell.swift */,
+				A5CF0C0229321888005F5B62 /* subscriptionTableViewCell.xib */,
+			);
+			path = TableViewCells;
+			sourceTree = "<group>";
+		};
+		A5D8690129322F1500D52578 /* Subscribed */ = {
+			isa = PBXGroup;
+			children = (
+				A5D8690229322F2B00D52578 /* SubscribedViewController.swift */,
+				A5D8690329322F2B00D52578 /* SubscribedViewController.xib */,
+			);
+			path = Subscribed;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -122,8 +267,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5D8690529322F2B00D52578 /* SubscribedViewController.xib in Resources */,
+				A5CF0C0629322088005F5B62 /* Graphik-Semibold-Trial.otf in Resources */,
 				A5CF0BD629312F8E005F5B62 /* LaunchScreen.storyboard in Resources */,
+				A5CF0BF32931DEFC005F5B62 /* MonumentExtended-Ultrabold.otf in Resources */,
+				A5CF0BF62931DEFC005F5B62 /* GraphikMedium.otf in Resources */,
+				A5CF0BF22931DEFC005F5B62 /* GraphikRegular.otf in Resources */,
 				A5CF0BD329312F8E005F5B62 /* Assets.xcassets in Resources */,
+				A5CF0BF52931DEFC005F5B62 /* TuskerGrotesk-3600Semibold.ttf in Resources */,
+				A5CF0BE229313519005F5B62 /* LoginViewController.xib in Resources */,
+				A5CF0C0429321888005F5B62 /* subscriptionTableViewCell.xib in Resources */,
+				A5CF0BFB2931DFF1005F5B62 /* SubscriptionViewController.xib in Resources */,
+				A5CF0BF42931DEFC005F5B62 /* MonumentExtended-Regular.otf in Resources */,
+				A5CF0C0829322099005F5B62 /* Graphik-Regular-Trial.otf in Resources */,
+				A5CF0BF12931D1F2005F5B62 /* RegisterViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,7 +291,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5CF0BE5293142C6005F5B62 /* Extension+UIFont.swift in Sources */,
+				A5CF0BFA2931DFF1005F5B62 /* SubscriptionViewController.swift in Sources */,
+				A5CF0BFF293215F2005F5B62 /* Subscription.swift in Sources */,
+				A5CF0BE129313519005F5B62 /* LoginViewController.swift in Sources */,
+				A5D8690429322F2B00D52578 /* SubscribedViewController.swift in Sources */,
 				A5CF0BCE29312F8D005F5B62 /* ViewController.swift in Sources */,
+				A5CF0BF02931D1F2005F5B62 /* RegisterViewController.swift in Sources */,
+				A5CF0C0329321888005F5B62 /* subscriptionTableViewCell.swift in Sources */,
 				A5CF0BCA29312F8D005F5B62 /* AppDelegate.swift in Sources */,
 				A5CF0BCC29312F8D005F5B62 /* SceneDelegate.swift in Sources */,
 			);
