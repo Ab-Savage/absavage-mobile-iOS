@@ -45,6 +45,7 @@ class LoginViewController: UIViewController {
         // Text view delegate
         emailTextField.delegate = self
         passwordTextField.delegate = self
+        // - Text view placeholder
         emailTextField.attributedPlaceholder = NSAttributedString(
             string: "EMAIL",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
@@ -53,6 +54,11 @@ class LoginViewController: UIViewController {
             string: "PASSWORD",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
+        // - Image view
+        emailImageView.isHidden = true
+        // - Password
+        passwordTextField.isSecureTextEntry = true
+        addGesture(someView: eyePasswordImageView, methods: #selector(clickOnShowPassword(_:)))
     }
     
     private func setupGradient() {
@@ -73,16 +79,35 @@ class LoginViewController: UIViewController {
     @IBAction func handleLoginTapped(_ sender: Any) {
         // TODO: Handle login
     }
+    
     @IBAction func handleSignUpTapped(_ sender: Any) {
         // - Go to register
         let registerVC = RegisterViewController()
         self.navigationController?.pushViewController(registerVC, animated: true)
     }
+    
     @IBAction func handleAppleTapped(_ sender: Any) {
         // TODO: Handle login with apple
     }
+    
     @IBAction func handleGoogleTapped(_ sender: Any) {
         // TODO: Handle login with google
+    }
+    
+    @objc private func clickOnShowPassword(_ gesture: UITapGestureRecognizer) {
+        let status = passwordTextField.isSecureTextEntry
+        passwordTextField.isSecureTextEntry = !status
+    }
+    
+    // MARK: - HELPER METHODS
+    private func addGesture(someView: UIView, methods: Selector?) {
+        // - Create and setup UITapGestureRecognizer instance
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: methods)
+        gestureRecognizer.numberOfTapsRequired = 1
+        gestureRecognizer.numberOfTouchesRequired = 1
+        // - Add GestureRecognizer to view
+        someView.addGestureRecognizer(gestureRecognizer)
+        someView.isUserInteractionEnabled = true
     }
 }
 
@@ -92,7 +117,25 @@ extension LoginViewController: UITextFieldDelegate {
         // TODO: Handle when text field is begin editing
     }
     
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField.placeholder == "EMAIL",
+           let text = textField.text,
+           text.contains("@"),
+           text.contains(".") {
+            emailImageView.isHidden = false
+        } else if textField.placeholder == "EMAIL" {
+            emailImageView.isHidden = true
+        }
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        // TODO: Handle when text field end editing
+        if textField.placeholder == "EMAIL",
+           let text = textField.text,
+           text.contains("@"),
+           text.contains(".") {
+            emailImageView.isHidden = false
+        } else if textField.placeholder == "EMAIL" {
+            emailImageView.isHidden = true
+        }
     }
 }

@@ -64,6 +64,11 @@ class RegisterViewController: UIViewController {
             string: "USERNAME",
             attributes: [NSAttributedString.Key.foregroundColor: UIColor.white]
         )
+        // - Image view
+        emailImageView.isHidden = true
+        // - Password
+        passwordTextField.isSecureTextEntry = true
+        addGesture(someView: eyePasswordImageView, methods: #selector(clickOnShowPassword(_:)))
     }
     
     private func setupGradient() {
@@ -97,6 +102,21 @@ class RegisterViewController: UIViewController {
         // TODO: Handle login with google
     }
     
+    @objc private func clickOnShowPassword(_ gesture: UITapGestureRecognizer) {
+        let status = passwordTextField.isSecureTextEntry
+        passwordTextField.isSecureTextEntry = !status
+    }
+    
+    // MARK: - HELPER METHODS
+    private func addGesture(someView: UIView, methods: Selector?) {
+        // - Create and setup UITapGestureRecognizer instance
+        let gestureRecognizer = UITapGestureRecognizer(target: self, action: methods)
+        gestureRecognizer.numberOfTapsRequired = 1
+        gestureRecognizer.numberOfTouchesRequired = 1
+        // - Add GestureRecognizer to view
+        someView.addGestureRecognizer(gestureRecognizer)
+        someView.isUserInteractionEnabled = true
+    }
 }
 
 extension RegisterViewController: UITextFieldDelegate {
@@ -104,7 +124,25 @@ extension RegisterViewController: UITextFieldDelegate {
         // TODO: Handle when textField begin editing
     }
     
+    func textFieldDidChangeSelection(_ textField: UITextField) {
+        if textField.placeholder == "EMAIL",
+           let text = textField.text,
+           text.contains("@"),
+           text.contains(".") {
+            emailImageView.isHidden = false
+        } else if textField.placeholder == "EMAIL" {
+            emailImageView.isHidden = true
+        }
+    }
+    
     func textFieldDidEndEditing(_ textField: UITextField) {
-        // TODO: Handle when text field end editing
+        if textField.placeholder == "EMAIL",
+           let text = textField.text,
+           text.contains("@"),
+           text.contains(".") {
+            emailImageView.isHidden = false
+        } else if textField.placeholder == "EMAIL" {
+            emailImageView.isHidden = true
+        }
     }
 }
